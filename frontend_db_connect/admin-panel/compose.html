@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Testicaon Admin | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/testicon.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <!-- iCheck -->
+  
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      
+      <span class="logo-lg"><b>Testicon Admin Panel</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" data-toggle="tooltip" data-placement="right" title="Colapse Menu">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> Bebe Owasu<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+            </li>      
+            <!-- Control Sidebar Toggle Button -->      
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form" data-toggle="tooltip" data-placement="top" title="Search">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+
+
+      <ul class="sidebar-menu">
+        <!--<li class="header">MAIN NAVIGATION</li>-->
+        <li class="treeview" data-toggle="tooltip" data-placement="top" title="DashBoard">
+          <a href="index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>   
+          </a> 
+        
+       <li>
+          <a href="mailbox.html">
+            <i class="fa fa-envelope"></i> <span data-toggle="tooltip" data-placement="top" title="Mailbox">Mailbox</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-red" data-toggle="tooltip" data-placement="top" title="Read Messages">5</small>
+              <small class="label pull-right bg-green" data-toggle="tooltip" data-placement="top" title="Unread messages">16</small>
+              
+            </span>
+          </a>
+        </li>
+
+        <li class="treeview" data-toggle="tooltip" data-placement="top" title="Test Provider">
+          <a href="#">
+            <i class="fa fa-product-hunt"></i>
+            <span>Test Provider</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="all-provider.html" data-toggle="tooltip" data-placement="top" title="List of all Test Providers"><i class="fa fa-list" aria-hidden="true"></i> List All Providers</a></li>
+            <li><a href="add-new-provider.html" data-toggle="tooltip" data-placement="top" title="Add New Center"><i class="fa fa-plus" aria-hidden="true"></i> Add New Provider</a></li>
+            <li><a href="edit-provider.html" data-toggle="tooltip" data-placement="top" title="Update Existing Center"><i class="fa fa-pencil" aria-hidden="true"></i> Update Existing Provider</a></li>
+            <li><a href="delete-provider.html" data-toggle="tooltip" data-placement="top" title="Delete Center"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Provider</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="treeview" data-toggle="tooltip" data-placement="top" title="Test Center">
+          <a href="#">
+            <i class="fa fa-building"></i>
+            <span>Test Center</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="all-center.html" data-toggle="tooltip" data-placement="top" title="List of all Test Centers"><i class="fa fa-list" aria-hidden="true"></i> List All Centers</a></li>
+            <li><a href="add-test-center.html" data-toggle="tooltip" data-placement="top" title="Add New Center"><i class="fa fa-plus" aria-hidden="true"></i> Add New Center</a></li>
+            <li><a href="edit-test-center.html" data-toggle="tooltip" data-placement="top" title="Update Existing Center"><i class="fa fa-pencil" aria-hidden="true"></i> Update Existing Center</a></li>
+            <li><a href="delete-test-center.html" data-toggle="tooltip" data-placement="top" title="Delete Center"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Center</a></li>
+          </ul>
+        </li>
+        <li class="treeview" data-toggle="tooltip" data-placement="top" title="All Test">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span data-toggle="tooltip" data-placement="top" title="Test">Test</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li data-toggle="tooltip" data-placement="top" title="List Of All Test"><a href="all-test.html"><i class="fa fa-list" aria-hidden="true"></i> List All Test</a></li>
+            <li data-toggle="tooltip" data-placement="top" title="Add New Test"><a href="add-new-test.html"><i class="fa fa-plus" aria-hidden="true"></i> Add New Test</a></li>
+            <li data-toggle="tooltip" data-placement="top" title="Update Existing Test"><a href="edit-test.html"><i class="fa fa-pencil" aria-hidden="true"></i> Update Existing Test</a></li>
+            <li data-toggle="tooltip" data-placement="top" title="Delete Test"><a href="delete-test.html"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete Test</a></li>
+          </ul>
+        </li>
+        <li class="treeview" data-toggle="tooltip" data-placement="top" title="User">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>User</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="all-users.html" data-toggle="tooltip" data-placement="top" title="List Of All Users"><i class="fa fa-list" aria-hidden="true"></i> List Of All Users</a></li>
+            <li><a href="add-new-user.html" data-toggle="tooltip" data-placement="top" title="Add New User"><i class="fa fa-plus" aria-hidden="true"></i> Add New User</a></li>
+            <li><a href="edit-user.html" data-toggle="tooltip" data-placement="top" title="Update User"><i class="fa fa-pencil" aria-hidden="true"></i> Update Existing User</a></li>
+            <li><a href="delete-user.html" data-toggle="tooltip" data-placement="top" title="Delete User"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete User</a></li>
+          </ul>
+        </li>
+        <li data-toggle="tooltip" data-placement="top" title="Show Events"><a href="#"><i class="fa fa-calendar"></i><span> Event</span></a></li>
+        <li data-toggle="tooltip" data-placement="top" title="Show Address Book"><a href="#"><i class="fa fa-book"></i><span> Address Book</span></a></li>   
+        <li data-toggle="tooltip" data-placement="top" title="Admin Documentations"><a href="#"><i class="fa fa-book" ></i><span>Documentation</span></a></li>
+       
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+<!-- Main row 1 -->
+<!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Compose Mail
+      </h1>
+      <ol class="breadcrumb">
+        <li data-toggle="tooltip" data-container="body" title="Home Page"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Mailbox</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom" data-toggle="tooltip" data-placement="top" title="Back">
+            <i class="fa fa-step-backward" aria-hidden="true"></i> Back to Inbox</a>
+
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">Folders</h3>
+
+            <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box-body no-padding">
+              <ul class="nav nav-pills nav-stacked">
+                <li data-toggle="tooltip" data-placement="top" title="Check Mail"><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
+                  <span class="label label-primary pull-right">12</span></a></li>
+                <li  data-toggle="tooltip" data-placement="top" title="Sent Mail"><a href="sent-mails.html"><i class="fa fa-envelope-o"></i> Sent <span class="label label-warning pull-right">65</span></a></li>
+                <li  data-toggle="tooltip" data-placement="top" title="Delete Mail"><a href="trash-box.html"><i class="fa fa-trash-o"></i> Trash</a></li>
+              </ul>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /. box -->
+         
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-9">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Compose New Message</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="form-group">
+                <input class="form-control" placeholder="To:">
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Subject:">
+              </div>
+              <div class="form-group">
+                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                      <h1><u>Heading Of Message</u></h1>
+                      <h4>Subheading</h4>
+                      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
+                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
+                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which toil and pain can procure him some great
+                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+                        except to obtain some advantage from it? But who has any right to find fault with a man who
+                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
+                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee</p>
+                      <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                        <li>List item four</li>
+                      </ul>
+                      <p>Thank you,</p>
+                      <p>John Doe</p>
+                    </textarea>
+              </div>
+              <div class="form-group">
+                <div class="btn btn-default btn-file" data-toggle="tooltip" data-container="body" title="Add Attachment">
+                  <i class="fa fa-paperclip"></i> Attachment
+                  <input type="file" name="attachment">
+                </div>
+                <p class="help-block">Max. 32MB</p>
+              </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-container="body" title="Send Message"><i class="fa fa-envelope-o"></i> Send</button>
+              </div>
+              <button type="reset" class="btn btn-default" data-toggle="tooltip" data-container="body" title="Cancel Message"><i class="fa fa-times"></i> Discard</button>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+    <!-- /.main content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+<!--<div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.6
+    </div>-->
+    <strong>Copyright &copy; 2016 <a href="#">Testicon</a>.</strong> All rights
+    reserved.
+   
+  </footer>
+
+  
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/moment.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="js/testicon.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

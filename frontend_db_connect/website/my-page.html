@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Page | Test Center</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/testicon.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Testicon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active"><a href="my-page.html">My Page<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a href="find-test.html">Find Test</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    
+                    <!-- form search -->  
+                    <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                    <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                    </form><!-- End form search -->   
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+
+                           <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-envelope"></span> <b class="caret"></b></a>
+           <ul class="dropdown-menu ">
+           <li class="dropdown-header"><span class="glyphicon glyphicon-info-sign " ></span> Alerts & Remainders</li>  
+     <li role="separator" class="divider"></li>        
+              <li class="message-preview">
+                  <a href="#">
+                  <div class="media">
+                  
+                  <div class="media-body">
+                  <h5 class="media-heading"><strong>John Smith</strong>
+                  </h5>
+                  <p class="small text-muted"><span class="glyphicon glyphicon-time"></span> Yesterday at 4:32 PM</p>
+                  <p>The test you registered microsoft excel,<br> TestID 09cd65 is coming up tomorrow ain malmö <br> test center lexticon at 13:00...</p>
+                  </div>
+                  </div>
+                  </a>
+              </li>
+             
+      <li role="separator" class="divider"></li>
+          <li class="message-preview">
+                  <a href="#">
+                  <div class="media">
+                  
+                  <div class="media-body">
+                  <h5 class="media-heading"><strong>Peter bold</strong>
+                  </h5>
+                  <p class="small text-muted"><span class="glyphicon glyphicon-time"></span> Today at 11:02 PM</p>
+                  
+                  <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                  </div>
+                  </div>
+                  </a>
+              </li> 
+     <li role="separator" class="divider"></li>
+           <li class="message-footer">
+           <a href="#"><span class="glyphicon glyphicon-option-horizontal " > </span>  Read All New Messages</a>
+           </li>
+           </ul>
+           </li><!-- End User message Alerts & remainders -->
+
+        <li class="dropdown"><!-- Dropdown menu login AS User --> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-user"></span> <span id="userName"> User Name</span> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header"><span class="glyphicon glyphicon-menu-hamburger"></span>  User Profile</li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" data-toggle="modal" data-target="#Modal-account-settings"><span class="glyphicon glyphicon-cog"></span> Account Settings</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#Modal-history"><span class="glyphicon glyphicon-stats"></span> Test History</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li id="logout" ><a href="index.html"><span class="glyphicon glyphicon-off "></span> Logout</a></li>
+          </ul>
+        </li><!-- End dropdown menu Login AS User -->
+
+
+                    
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Main content Section --><!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">My Page
+                    <small> - Events & Reminders</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">My Page</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Main Content -->
+        
+        <div class="container col-md-12">
+			<div class="table-responsive v-scroll">
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+            	<th>Provider</th>
+              <th>Provider ID</th>
+              <th>Test Name</th>
+              <th>Test Date</th>
+							<th>Test Location</th>
+							<th>Payment Status</th>
+              <th>Edit Test</th>
+              <th>Delete Test</th> 
+              <th>Pay Now</th> 
+						</tr>
+					</thead>
+					<tbody id="bookingsTable">
+						<!--
+            <tr>   
+              <td>Microsoft</td>
+              <td>M2344soft</td>
+							<td>Exel</td>
+              <td>2016-07-05</td>
+							<td>Malmö</td>
+							<td>Paid</td>
+        <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-sm" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+        <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-sm" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>      
+				<td><button class="btn btn-sm btn-primary" data-toggle="tooltip" title="Pay Now">Pay Now</button></td>
+						</tr>
+					        -->   
+					</tbody>
+				</table>
+      </div>
+  </div>
+
+        <!--/ Main Content -->       
+        <!-- Footer-->     
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+            <p class="navbar-text pull-left">Copyright © 2016 Testicon. All rights Reserverd.</p>
+            </div>
+        </nav>
+    <!-- End Footer-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- All Models-->
+<!-- Modal POPUP account settings-->
+<div class="modal" id="Modal-account-settings" data-backdrop="static">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+          <h4 class="modal-title"><b>Account Settings</b></h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+     <div><!-- account settings Tabs-->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#personal-information" aria-controls="personal-information" role="tab" data-toggle="tab">Personal Information</a></li>
+    <li role="presentation"><a href="#security" aria-controls="security" role="tab" data-toggle="tab">Security</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+  <div class="tab-content"> <!-- Tab panes -->
+  <!-- Personal Information form -->
+    <div role="tabpanel" class="tab-pane active" id="personal-information">
+        <br>
+        <div class="row">
+        <div class="col-xs-6 form-group">
+          <label for="registrationInputName">First Name</label>
+          <href="#text1" disabled input type="firstname" class="form-control edit_text" id="acc-firstName">First Name</a>
+		    </div>
+        <div class="col-xs-6 form-group">
+          <label for="registrationInputName">Last Name</label>
+          <a href="#text1" disabled input type="lastname" class="form-control edit_text" id="acc-lastName">Last Name</a>
+		     </div>
+
+        <div class="col-xs-6 form-group">
+          <label for="registrationInputaddress">Address</label>
+					<a href="#text1" input type="address" class="form-control edit_text" id="acc-address">Kronetorpsgatan 98a</a>
+        </div>
+        <div class="col-xs-6 form-group">
+          <label for="exampleInputpostcode">Postcode</label>
+					<a href="#text1" input type="postcode" class="form-control edit_text" id="acc-postCode">21227</a>
+        </div>
+            
+         <div class="col-xs-6 form-group">
+            <label for="exampleInputcity">City</label>
+            <a href="#text1" input type="city" class="form-control edit_text" id="acc-city">Malmö</a>
+        </div> 
+
+        <div class="col-xs-6 form-group">
+            <label for="exampleInputcity">Country</label>
+            <a href="#text1" input type="country" class="form-control edit_text" id="acc-country">Sverige</a>
+        </div>   
+
+        <!--    
+        <div class="col-xs-6 form-group">
+          <label class="control-label" for="selectbasic">Country</label>
+          <select name="selectbasic" class="form-control" id="selectbasic">
+            <option value="1">Option one</option>
+            <option value="2">Sweden</option>
+            <option value="3">Denmark</option>
+            <option value="4">Norway</option>
+            <option value="3">Finland</option>
+          </select>
+        </div>
+        -->
+      <div class="col-xs-6 form-group">
+          <label for="exampleInputPersonalCodeNumber">Personal code number</label>
+					<input type="text" disabled class="form-control" id="disabledregistrationPersonalCodeNumber" placeholder="Personal code number"> 
+        </div>
+   <div class="col-xs-6 form-group"><!-- Multiple Radios (inline) -->
+   <label>Gender</label>
+   </div>
+      <div class="col-xs-6 form-group">
+        <label class="radio-inline" for="radios-0">
+        <input name="radios" disabled id="disabledradios-0" type="radio" checked="checked" value="1">Male</label> 
+        <label class="radio-inline" for="radios-1">
+        <input name="radios" disabled id="disabledradios-1" type="radio" value="2">Female</label> 
+     </div>
+
+      <div class="col-xs-6 form-group">
+          <label for="exampleInputEmail1">Email address</label>
+					<a href="#text1" input type="email" class="form-control edit_text" id="acc-email">bebeowasu@yahoo.com</a>
+        </div>
+        <div class="col-xs-6 form-group">
+          <label for="exampleInputEmail1Confirm">Confirm email address</label>
+					<a href="#text1" input type="confirm-email" class="form-control edit_text" id="acc-confemail">bebeowasu@yahoo.com</a>
+        </div>
+
+       <div class="col-xs-6 form-group">
+            <label for="exampleInputTelephoneNumber">Telephone Nr.</label>
+            <a href="#text1" input type="telephone-number" class="form-control edit_text" id="telephone-num">+046 722 872 545</a>
+        </div>
+        <div class="col-xs-6 form-group">
+          <label for="exampleInputCompany">Company</label>
+					<a href="#text1" input type="company" class="form-control edit_text" id="company">Lexicon</a>
+        </div>
+
+		
+        <div class="col-md-6 col-md-offset-8">
+        <a class="btn btn-primary" href="#">Save changes</a>
+        <a class="btn btn-primary" href="#" data-dismiss="modal">Close</a>
+        </div>
+        </div>
+    </div><!-- End Personal Information form -->
+
+    <div role="tabpanel" class="tab-pane" id="security"><!-- Security Information form -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 ">
+          <div class="panel-default">
+            <div class="panel-heading">
+             <h3 class="panel-title">
+           <span class="glyphicon glyphicon-th"></span> Change password</h3>
+        </div>
+          <div class="panel-body">
+
+
+            <p class="col-md-4 text-muted">Please fill Out the Following Fields to Change your Password.</p>
+
+
+            <div class="col-md-offset-4">
+            <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+              <input class="form-control" type="password" id="acc-password" placeholder="Current Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-log-in"></span></div>
+              <input class="form-control" type="password" placeholder="New Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-repeat"></span></div>
+              <input class="form-control" type="password" placeholder="Re-New Password">
+            </div>
+          </div>
+          </div>
+
+
+          </div>    
+          <div class="col-md-2 col-md-offset-10">
+            <button class="btn btn-success" type="submit">save</button>
+              </div>
+            </div>
+            </div>
+          </div>
+
+      <h4 class="panel-title"><!--<div class="panel Deactivate Account">-->
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" 
+        aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-remove-circle"></span>
+         Deactivate your Account 
+        </a>
+      </h4>
+  
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" >
+      <div class="panel-body">
+        Deactivating your account will disable your Profile and remove your name 
+        and all your Test Information from our system. You can reactivate your account
+        within a period of two months and recover all your past information and activities.
+        Else Register a new Acount.
+        <a href="#" data-toggle="modal" data-target="#myModal20">Deactivate Your Account.</a>
+
+  <div class="modal fade" id="myModal20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content col-md-8 col-md-offset-2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-remove-circle"></span> Deactivate Your Account</h5>
+      </div>
+      <div class="modal-body">
+
+<h4 class="text-center">Are You Sure You Want To Deactivate Your Account?</h4><br>
+<h6 class="text-left text-muted">Reasons for Leaving ( Required )</h6>
+
+<form role="form">
+        <div class="radio">
+          <label><input type="radio" name="optradio">This is temporal ill be back</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">I am financially low on Budget</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Option 4</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Option 5</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Option Bla Bla Bla</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Others ( Please explain futher)</label>
+        </div>
+      </form>
+
+
+        <form role="form">
+            <div class="form-group">
+              <label for="comment">Comment: Explain Futher</label>
+              <textarea class="form-control" rows="7" id="comment"></textarea>
+            </div>
+        </form>
+
+
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-danger">Deactivate</button>
+   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+      </div>
+    </div><!--</div class deactivate account>-->
+
+    </div><!-- End Security Information form -->
+
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  
+</div>
+     </div>
+        
+      </div>
+    </div>
+</div>
+</div><!-- End account settings Tabs-->
+      <!-- End POPUP account settings-->
+
+<!-- Modal POPUP History-->
+<div class="modal" id="Modal-history" data-backdrop="static">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Your Test History</h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          
+          Content for the dialog / modal goes here.
+        </div>
+        
+
+        
+        <div class="modal-footer">
+        <a class="btn btn-primary" href="#" data-dismiss="modal">Close</a>
+          
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End Modal POPUP History-->
+
+<!-- Modal Edit & delete Table content-->		
+      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog">
+    <div class="col-xs-8 modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Edit Your Test Detail</h4>
+        </div>
+        <div class="modal-body">
+       
+        <div class="form-group">
+        <label class="control-label" for="selectbasic">Choose Provider</label>
+        <select name="selectbasic" class="form-control" id="selectbasicprovider">
+          <option value="1">Apple</option>
+          <option value="2">Microsoft</option>
+          <option value="3">Oracle</option>
+          <option value="4">Lunix</option>
+          <option value="3">Dot Net</option>
+        </select>
+        </div>
+
+        
+        <div class="form-group">
+        <label class="control-label" for="selectbasic">Test Name</label>
+        <select name="selectbasic" class="form-control" id="selectbasictest">
+          <option value="1">sql</option>
+          <option value="2">Exel</option>
+          <option value="3">Jave</option>
+          <option value="4">RedHat</option>
+          <option value="3">Java Script</option>
+        </select>
+        </div>
+        
+        <div class="form-group">
+        <label class="control-label" for="selectbasic">Test Locations</label>
+        <select name="selectbasic" class="form-control" id="selectbasictest">
+          <option value="1">Malmö</option>
+          <option value="2">Lund</option>
+          <option value="3">Karlskrona</option>
+          <option value="4">växjo</option>
+          <option value="3">copenhagen</option>
+        </select>
+        </div>
+          <div class="form-group"> <!-- Date-Picker --> 
+              <label for="testdate">Avialible Test Dates</label> 
+                <div class='input-group date' id='datepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+                $('#datepicker1').datepicker({
+                  format: "yyyy/mm/dd"
+                });
+        });
+           
+        </script> <!-- /.Date-Picker -->
+        
+        <div class="form-group">
+        <label for="testdate">Avialible Test Time</label>  
+        <input class="form-control " type="text" placeholder="Time">
+        </div>
+               
+        <div class="form-group">
+        <label for="testpaymentstatus">Test Payment Status</label>  
+        <input class="form-control " type="text" placeholder="Payment Status">
+        </div>
+      </div>
+         <div class="modal-footer ">
+           <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+        </div>
+      </div>
+  </div><!-- /.modal-content -->     
+  </div><!-- /.modal-dialog -->       
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+     </div>
+  <div class="modal-body">  
+       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>     
+  </div>
+        <div class="modal-footer ">
+            <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+        </div>
+     </div>
+  </div> <!-- /.modal-content -->     
+  </div> <!-- /.modal-dialog -->
+<!-- End Modal Edit & delete Table content-->
+
+
+<!-- Modal Deactivate Account-->
+<div class="modal" id="Modal-deactivate-account" data-backdrop="static">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+          <h4 class="modal-title"><span class="glyphicon glyphicon-remove-circle"></span>Deactivate Your Account</h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          
+          Are You Sure You Want To Deactivate Your Account.
+        </div>
+        
+
+        
+        <div class="modal-footer">
+        <a class="btn btn-primary" href="#" data-dismiss="modal">Close</a>
+          
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End Deactivate Account-->
+
+<!-- End All Models-->
+
+    <!-- jQuery -->
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/globalScript.js"></script>
+
+     <script src="js/myPage.js"></script>
+
+</body>
+
+</html>
