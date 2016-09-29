@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1053{\fonttbl{\f0\froman\fcharset0 Times New Roman;}{\f1\fswiss\fcharset0 Courier New;}{\f2\fnil\fcharset0 Calibri;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.10240}\viewkind4\uc1 
+\pard\keepn\sb100\sa100\b\f0\fs36 List of FTP commands for the Microsoft command-line FTP client\par
+\fs28 Command-line options\par
+
+\pard\sb100\sa100\b0\fs24 As you're starting the program from a DOS prompt:\line\f1 ftp [-v] [-d] [-i] [-n] [-g] [-s:filename] [-a] [-w:windowsize] [computer]\f0  \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\b -v\b0  - Suppresses {{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul verbose}}}}\f0\fs24  display of remote server responses. \par
+{\pntext\f3\'B7\tab}\b -n\b0  - Suppresses auto-login upon initial connection. \par
+{\pntext\f3\'B7\tab}\b -i\b0  - Turns off interactive {{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul prompting}}}}\f0\fs24  during multiple file transfers. \par
+{\pntext\f3\'B7\tab}\b -d\b0  - Enables {{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul debugging}}}}\f0\fs24 , displaying all ftp commands passed between the client and server. \par
+{\pntext\f3\'B7\tab}\b -g\b0  - Disables filename {{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul globbing}}}}\f0\fs24 , which permits the use of wildcard chracters in local file and path names. \par
+{\pntext\f3\'B7\tab}\b -s:filename\b0  - Specifies a text file containing ftp commands; the commands will automatically run after ftp starts. No spaces are allowed in this parameter. Use this switch instead of redirection (>). \par
+{\pntext\f3\'B7\tab}\b -a\b0  - Use any local interface when binding data connection. \par
+{\pntext\f3\'B7\tab}\b -w:windowsize\b0  - Overrides the default transfer buffer size of 4096. \par
+{\pntext\f3\'B7\tab}\b computer\b0  - Specifies the computer name or IP address of the remote computer to connect to. The computer, if specified, must be the last parameter on the line.\par
+
+\pard\keepn\sb100\sa100\b\fs28 Client commands\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100 {\b0\fs24{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul !}}}}\b0\f0\fs24  - Runs the specified command on the local computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul ?}}}}\f0\fs24  - Displays descriptions for ftp commands \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul append}}}}\f0\fs24  - Appends a local file to a file on the remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul ascii}}}}\f0\fs24  - Sets the file transfer type to ASCII, the default \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul bell}}}}\f0\fs24  - Toggles a bell to ring after each file transfer command is completed (default = OFF) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul binary}}}}\f0\fs24  - Sets the file transfer type to binary \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul bye}}}}\f0\fs24  - Ends the FTP session and exits ftp \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul cd}}}}\f0\fs24  - Changes the working directory on the remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul close}}}}\f0\fs24  - Ends the FTP session and returns to the command interpreter \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul debug}}}}\f0\fs24  - Toggles debugging (default = OFF) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul delete}}}}\f0\fs24  - Deletes a single file on a remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul dir}}}}\f0\fs24  - Displays a list of a remote directory's files and subdirectories \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul disconnect}}}}\f0\fs24  - Disconnects from the remote computer, retaining the ftp prompt \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul get}}}}\f0\fs24  - Copies a single remote file to the local computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul glob}}}}\f0\fs24  - Toggles filename globbing (wildcard characters) (default = ON) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul hash}}}}\f0\fs24  - Toggles hash-sign (#) printing for each data block transferred (default = OFF) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul help}}}}\f0\fs24  - Displays descriptions for ftp commands \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul lcd}}}}\f0\fs24  - Changes the working directory on the local computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul literal}}}}\f0\fs24  - Sends arguments, verbatim, to the remote FTP server \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul ls}}}}\f0\fs24  - Displays an abbreviated list of a remote directory's files and subdirectories \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mdelete}}}}\f0\fs24  - Deletes one or more files on a remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mdir}}}}\f0\fs24  - Displays a list of a remote directory's files and subdirectories \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mget}}}}\f0\fs24  - Copies one or more remote files to the local computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mkdir}}}}\f0\fs24  - Creates a remote directory \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mls}}}}\f0\fs24  - Displays an abbreviated list of a remote directory's files and subdirectories \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul mput}}}}\f0\fs24  - Copies one or more local files to the remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul open}}}}\f0\fs24  - Connects to the specified FTP server \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul prompt}}}}\f0\fs24  - Toggles prompting (default = ON) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul put}}}}\f0\fs24  - Copies a single local file to the remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul pwd}}}}\f0\fs24  - Displays the current directory on the remote computer (literally, "\ul p\ulnone rint \ul w\ulnone orking \ul d\ulnone irectory") \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul quit}}}}\f0\fs24  - Ends the FTP session with the remote computer and exits ftp (same as "bye") \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul quote}}}}\f0\fs24  - Sends arguments, verbatim, to the remote FTP server (same as "literal") \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul recv}}}}\f0\fs24  - Copies a remote file to the local computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul remotehelp}}}}\f0\fs24  - Displays help for remote commands \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul rename}}}}\f0\fs24  - Renames remote files \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul rmdir}}}}\f0\fs24  - Deletes a remote directory \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul send}}}}\f0\fs24  - Copies a local file to the remote computer (same as "put") \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul status}}}}\f0\fs24  - Displays the current status of FTP connections \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul trace}}}}\f0\fs24  - Toggles packet tracing (default = OFF) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul type}}}}\f0\fs24  - Sets or displays the file transfer type (default = ASCII) \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul user}}}}\f0\fs24  - Specifes a user to the remote computer \par
+{\pntext\f3\'B7\tab}{{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf1\cf1\ul verbose}}}}\f0\fs24  - Toggles verbose mode (default = ON)\par
+
+\pard\sa200\sl276\slmult1\f2\fs22\lang29\par
+}
+ 
