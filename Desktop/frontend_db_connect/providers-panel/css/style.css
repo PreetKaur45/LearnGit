@@ -1,0 +1,33 @@
+.v-scroll{
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.table-responsive{
+  margin-top: 80px;
+  padding: 10px;
+}
+.add-newuser{
+  margin-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.add-newtest{
+  margin-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.add-newtestcenter{
+  margin-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.add-newprovider{
+  margin-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+

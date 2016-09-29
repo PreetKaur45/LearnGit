@@ -1,0 +1,39 @@
+.v-scroll{
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.table-responsive{
+  margin-top: 30px;
+  padding: 10px;
+  border-bottom-color: black
+}
+.add-newuser{
+  margin-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.add-newtest{
+  margin-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.add-newtestcenter{
+  margin-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.add-newprovider{
+  margin-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.table-bordered{
+ border-bottom-color: black; 
+ 
+}
+
+
